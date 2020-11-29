@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+body {
+    font-family: 'Source Serif Pro', serif;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    margin : 0;
+    padding : 0rem;
+    background-color: #0a042c;
+    
+}
+
+header{
+    background-color: #0a042c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0rem 3rem ;
+    max-height:50px;
+}
+header div{
+    font-weight: 500;
+    font-size: 1.5rem;   
+    color:white; 
+}
+
+nav{
+    padding-bottom: 0.3rem;  
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    width: auto;
+    height: auto;
+    display: flex;
+    padding-top: 1rem;
+}
+
+nav ul li{
+    float:left;
+    padding:5px;
+}
+
+
+nav ul li a:hover{
+    border:1px solid white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    width: 100;
+    border-radius: 15px;
+    padding : 0.3em 1em;
+    text-align: center;
+}
+.active{
+    background-color: white;
+    color:#0a042c;
+}
+
+.top{
+    border:none;
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin:4rem;
+    margin-bottom:0px;
+    color:white;
+}
+
+.top img{
+    border-radius: 50%;
+}
+
+.subsection{
+    padding:20px;
+    text-align: center;
+}
+.subsection h1{
+        font-size:4vh;
+        margin: auto;
+    }
+.subheading1{
+        font-size: 1.7vh;
+        justify-items: center;
+        padding:6px;
+        margin: auto;
+        color:turquoise;
+    }
+
+.subheading2{
+        line-height: 2rem;
+        padding-top: 1.2rem;
+        font-size: 2.7vh;
+    }
+
+
+.introdiv{
+    margin:0rem 2vw;
+    padding:4rem;
+    padding-top:1rem;
+    border-radius: 20px;
+    color:#0a042c;
+    padding-bottom: 0px;
+}
+
+.introdiv h1{
+    text-align: center;
+    font-size: 4vh;
+    padding-top:1rem;
+    min-width:200px;
+    border-top: 2px dotted #0a0338;
+    font-weight: lighter;    
+}
+
+.text{
+    margin:auto;
+    padding:15px 3rem;
+    text-align: justify;
+    font-size: 2.7vh;
+    line-height: 2rem;
+    padding-bottom: 0px;
+}
+
+.skilldiv{
+    position: relative;
+    padding:0 5rem;
+    border-radius: 20px;
+    color:#0a042c;
+    z-index: 1;
+    background:#0a042c;
+
+}
+.skilldiv:before{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    content:'';
+    background-color:white;
+    top:0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    z-index: -1;
+    transform-origin:top right;
+    transform:skew(-5deg);
+}
+.skilldiv:after{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    content:'';
+    background: inherit;
+    top:0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    z-index: -1;
+    transform-origin:top right;
+    transform:skewY(-5deg);
+}
+
+.skilldiv h1{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 2px dotted turquoise;
+    padding:20px;
+    margin:0 4rem;
+    padding-top:110px;
+    font-weight: lighter;
+        
+}
+.info-cards{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70rem;
+   
+}
+
+.flip-card {
+    margin: 0 auto 2rem auto;
+    background-color: transparent;
+    width: 220px;
+    height: 170px;
+    padding:20px;
+    perspective: 1000px;
+  }
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+  }
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+.flip-card-front {
+    background-color: white;
+    color: black;
+  }
+  
+.flip-card-back {
+    background-color: rgb(255, 255, 255);
+    color: #0a0338;
+    margin: 0;
+    transform: rotateY(180deg);
+  }
+.flip-card h1{
+    padding: 0;
+    color:#0a0338;
+}
+
+.flip-card img{
+    border-radius: 15px;
+}
+
+
+.card-heading h4 {
+    text-transform : uppercase;
+    margin : .5rem 0 0 0;
+    font-size: 1.5vh;
+}
+.footerdeiv{
+    font-size: 3vh;
+}
+
+footer{
+    text-align: center;
+    color:#0a0338;
+    margin:5rem;
+    margin-bottom: 2rem;
+}
+footer h1{
+    font-size: 3.3vh;
+    text-align: center;
+    padding:10px;
+    margin:60px;
+}
+footer a{
+    padding:10px;
+    text-decoration: none;
+    color:#0a0338;
+    font-size:3vh;
+}
+
+footer a:hover{
+    cursor: pointer;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    min-width:30px;
+    justify-content:space-around;
+    color:#0a0338;
+   
+}
+.details li{
+    padding:10px;
+}
+.project{
+   
+    padding-top: 0rem;
+}
+
+.project ol{
+    font-size: 1.5rem;
+}
+
+.project h2{
+    font-size: 3.4vh;
+    padding-bottom:0;
+    margin-bottom: 0;
+}
+
+.project small{
+    font-size: 2vh;
+}
+
+.project p{
+    font-size: 2.6vh;
+}
+
+.link{
+    font-size: 1.2rem;
+    color:purple;
+    text-decoration: none;
+}
+
+.container2{
+    box-shadow: 5px 5px 5px 5px #888888;
+    margin: 20px;
+    padding:10px;
+    margin-left: 0;
+    color:#0a0338;
+    border-radius: 5px;
+}
+
+.primary-link{
+    font-size: .8rem;
+    align-content: center;
+    margin:auto;
+    text-decoration: none;
+    color : #0a0338;
+    padding : 0.5rem 1rem;
+    border-radius: .5rem;
+    border-color: white;
+    background-color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.primary-link:hover{
+    border: 2px solid white;
+    background-color: #0a0338;
+    color: white;
+}
+
+@media only screen and (max-width :500px){
+
+
+    .top{
+        margin:15px;
+        margin-bottom:0px;
+        text-align: center;
+    }
+    header{
+        margin-left:1rem;
+        margin-right: 0.4rem;
+    }
+    header div{
+        padding-top:0.65rem;
+    }
+    .subsection h1{
+        font-size:1.2rem;
+        margin: 0;
+        padding: 0;
+        
+    }
+   
+    .subheading{
+        font-size: 1rem;
+        margin: 5px !important;
+        padding: 10px;
+    }
+    .introdiv{
+        margin:auto;
+        padding:10px;
+        padding-top: 0;
+    }
+    .skilldiv{
+        margin:auto;
+        padding: 0;
+    }
+    .footerdiv{
+        margin:auto;
+        
+    }
+    .footerdiv a{
+        font-size: 2.5vh;
+    }
+    .img{
+        margin:auto;
+    }
+}
