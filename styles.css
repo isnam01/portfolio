@@ -303,10 +303,15 @@ footer a:hover{
     font-size: 2.6vh;
 }
 
+button{
+    font-size: 1rem;
+    background-color:#0a0338 ;
+    padding:5px;
+    border-radius: 10px;
+}
 .link{
-    font-size: 1.2rem;
-    color:purple;
     text-decoration: none;
+    color: white;
 }
 
 .container2{
