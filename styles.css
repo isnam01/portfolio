@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
+
 body {
     font-family: 'Source Serif Pro', serif;
     margin:0;
@@ -24,6 +26,7 @@ header div{
     font-weight: 500;
     font-size: 1.5rem;   
     color:white; 
+    font-family: 'Elsie Swash Caps', cursive;
 }
 
 nav{
@@ -61,10 +64,14 @@ nav ul li a{
     padding : 0.3em 1em;
     text-align: center;
 }
+
+
 .active{
     background-color: white;
     color:#0a042c;
 }
+
+
 
 .top{
     border:none;
@@ -347,6 +354,12 @@ button{
         margin:15px;
         margin-bottom:0px;
         text-align: center;
+    }
+
+    .top img{
+        height:200px;
+        width:170px;
+        margin-top:60px;
     }
     header{
         margin-left:1rem;
