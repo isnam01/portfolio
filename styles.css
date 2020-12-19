@@ -136,11 +136,12 @@ nav ul li a{
     padding-bottom: 0px;
 }
 .introdiv div {
+    text-align: center;
     padding:15px 3rem;
 }
 
 .introdiv button{
-    margin:auto;
+    margin:5px;
     text-align: justify;
     font-size: 2.7vh;
 }
