@@ -135,6 +135,12 @@ nav ul li a{
     line-height: 2rem;
     padding-bottom: 0px;
 }
+.introdiv button{
+    margin:auto;
+    padding:15px 3rem;
+    text-align: justify;
+    font-size: 2.7vh;
+}
 
 .skilldiv{
     position: relative;
