@@ -122,7 +122,6 @@ nav ul li a{
 .introdiv h1{
     text-align: center;
     font-size: 4vh;
-    padding:15px 3rem;
     padding-top:1rem;
     min-width:200px;
     font-weight: lighter;    
@@ -130,11 +129,16 @@ nav ul li a{
 
 .text{
     margin:auto;
+    padding:15px 3rem;
     text-align: justify;
     font-size: 2.7vh;
     line-height: 2rem;
     padding-bottom: 0px;
 }
+.introdiv div {
+    padding:15px 3rem;
+}
+
 .introdiv button{
     margin:auto;
     text-align: justify;
